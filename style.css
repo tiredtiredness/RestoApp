@@ -14,6 +14,15 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -25,7 +34,51 @@ a {
   align-items: center;
 }
 
+.container--main {
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+.section {
+  padding: 32px 64px;
+}
+
+.section__cards {
+  display: flex;
+  gap: 32px;
+}
+
 /* ХЕДЕР */
+
+.bubble {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 64px;
+  background: #000;
+}
+
+.bubble span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.button--close {
+  background-color: #393939;
+  border-radius: 100%;
+  border: none;
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header {
   background: linear-gradient(90deg, #fedd2c 0%, #f9c201 100%);
 }
@@ -40,6 +93,12 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: #555;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 64px;
 }
 
 .contacts {
@@ -58,17 +117,37 @@ a {
   line-height: 16px;
 }
 
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.buttons__button {
+  border-radius: 16px;
+  border: 2px solid #1c1c1c;
+  padding: 10px 14px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons__button--filled {
+  background-color: #1c1c1c;
+}
+
+.buttons__button img {
+  width: 24px;
+  height: 24px;
+  padding: 2px 4px;
+}
+
 /* МЕНЮ */
+
 .section__title {
   font-size: 40px;
   line-height: 48px;
   margin-bottom: 32px;
-}
-
-.food-menu__list {
-  list-style: none;
-  display: flex;
-  gap: 32px;
 }
 
 .food-menu__item a {
@@ -76,11 +155,11 @@ a {
   font-size: 24px;
   line-height: 32px;
   width: 304px;
+  aspect-ratio: 1 / 1;
   padding: 16px;
   border-radius: 16px;
   display: flex;
   align-items: end;
-  aspect-ratio: 1 / 1;
 }
 
 #pizza {
@@ -121,4 +200,105 @@ a {
     ),
     url(images/salads.png);
   background-size: contain;
+}
+
+.section__cards {
+}
+.cards__item {
+}
+
+/* НОВИНКИ */
+.new-meals {
+}
+
+.new-meals__list {
+  display: flex;
+  gap: 32px;
+}
+
+.new-meals__item {
+}
+
+.card {
+  position: relative;
+  max-width: 304px;
+}
+
+.card__badges {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  gap: 8px;
+}
+.badge {
+  border-radius: 8px;
+  border: 8px solid transparent;
+  width: 36px;
+  height: 36px;
+}
+.badge--vegetarian {
+  background: url(./images/icons/vegetarian.svg), #1daa0f;
+  background-position: center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+.badge--spicy {
+  background: url(./images/icons/spicy.svg), #fc7d04;
+  background-position: center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+.badge--seafood {
+  background: url(./images/icons/seafood.svg), #0094e4;
+  background-position: center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+.card__link {
+}
+
+.card__image {
+  width: 304px;
+  aspect-ratio: 1 / 1;
+}
+
+.card__title {
+  font-size: 18px;
+  line-height: 24px;
+  color: #1c1c1c;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.card__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #727272;
+  font-weight: 400;
+  margin-bottom: 16px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card__button {
+  border: none;
+  border-radius: 16px;
+  background-color: #f4f4f4;
+  width: 100%;
+  padding: 16px 24px;
+  font-weight: 600;
+}
+
+.card__price {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #1c1c1c;
 }
