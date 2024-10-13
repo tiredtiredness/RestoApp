@@ -1,0 +1,91 @@
+.bubble {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 64px;
+  background: #000;
+}
+
+.bubble span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.button--close {
+  background-color: #393939;
+  border-radius: 100%;
+  border: none;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  background: linear-gradient(90deg, #fedd2c 0%, #f9c201 100%);
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav__item a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #555;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.contacts {
+  text-align: right;
+  color: #555;
+}
+
+.contacts__phone {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contacts__description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.buttons__button {
+  border-radius: 16px;
+  border: 2px solid #1c1c1c;
+  padding: 10px 14px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons__button--filled {
+  background-color: #1c1c1c;
+}
+
+.buttons__button img {
+  width: 24px;
+  height: 24px;
+  padding: 2px 4px;
+}
