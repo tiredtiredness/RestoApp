@@ -1,9 +1,9 @@
-.section__cards > li > a {
-  color: #fff;
+.cards > li > a {
   font-size: 24px;
   line-height: 32px;
+  color: #fff;
   width: 304px;
-  aspect-ratio: 1 / 1;
+  height: 304px;
   padding: 16px;
   border-radius: 16px;
   display: flex;
@@ -17,7 +17,7 @@
       rgba(0, 0, 0, 0) 50%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url(/images/menu/pizza.png);
+    url(../images/menu/pizza.webp);
   background-size: contain;
 }
 
@@ -27,7 +27,7 @@
       rgba(0, 0, 0, 0) 50%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url(/images/menu/soups.png);
+    url(../images/menu/soups.webp);
   background-size: contain;
 }
 
@@ -37,7 +37,7 @@
       rgba(0, 0, 0, 0) 50%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url(/images/menu/hot-dishes.png);
+    url(../images/menu/hot-dishes.webp);
   background-size: contain;
 }
 
@@ -47,7 +47,7 @@
       rgba(0, 0, 0, 0) 50%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url(/images/menu/salads.png);
+    url(../images/menu/salads.webp);
   background-size: contain;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .card-content__title {
-  font-weight: 600;
+  letter-spacing: 2px;
   font-size: 32px;
   line-height: 40px;
   color: #fff;
@@ -122,8 +122,9 @@
   border-radius: 8px;
   padding: 8px;
   font-size: 14px;
-  font-weight: 600;
   line-height: 20px;
+  letter-spacing: 0.6px;
+  text-align: left;
   color: #fff;
 }
 
@@ -139,20 +140,18 @@
 
 .card-content__status-badge {
   font-size: 14px;
-  font-weight: 600;
   line-height: 20px;
+  letter-spacing: 0.6px;
   border-radius: 8px;
   padding: 8px;
 }
 
-.card-content__status-badge--yellow {
-  background-color: #fedd2c;
-  color: #1c1c1c;
+.card-content__status-badge--positive {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
 }
 
-.card-content__status-badge--grey {
-  background-color: #727272;
+.card-content__status-badge--negative {
+  background-color: var(--color-light-grey);
   color: #fff;
 }
-
-/* навести полный порядок не успел */

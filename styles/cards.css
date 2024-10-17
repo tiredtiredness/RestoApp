@@ -1,6 +1,17 @@
+.cards__item {
+  position: relative;
+}
+
 .card {
   position: relative;
   max-width: 304px;
+}
+
+.card__wrapper {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .card__badges {
@@ -9,56 +20,53 @@
   right: 8px;
   display: flex;
   gap: 8px;
+  z-index: 1;
 }
 
 .badge {
   border-radius: 8px;
-  border: 8px solid transparent;
+  padding: 8px;
   width: 36px;
   height: 36px;
 }
 
 .badge--vegetarian {
-  background: url(/images/icons/vegetarian.svg), #1daa0f;
+  background: url(../images/icons/vegetarian.svg), #1daa0f;
   background-position: center;
-  background-size: 16px;
   background-repeat: no-repeat;
 }
 
 .badge--spicy {
-  background: url(/images/icons/spicy.svg), #fc7d04;
+  background: url(../images/icons/spicy.svg), #fc7d04;
   background-position: center;
-  background-size: 16px;
   background-repeat: no-repeat;
 }
 
 .badge--seafood {
-  background: url(/images/icons/seafood.svg), #0094e4;
+  background: url(../images/icons/seafood.svg), #0094e4;
   background-position: center;
-  background-size: 16px;
   background-repeat: no-repeat;
 }
 
 .card__image {
   width: 304px;
-  aspect-ratio: 1 / 1;
+  height: 304px;
 }
 
 .card__title {
   font-size: 18px;
   line-height: 24px;
-  color: #1c1c1c;
-  font-weight: 600;
-  margin-top: 14px;
+  color: var(--color-black);
   margin-bottom: 4px;
 }
 
 .card__description {
   font-size: 16px;
   line-height: 24px;
-  color: #727272;
+  letter-spacing: 1px;
+  word-spacing: -0.8px;
+  color: var(--color-light-grey);
   font-weight: 400;
-  margin-bottom: 16px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
@@ -67,17 +75,15 @@
 }
 
 .card__button {
-  border: none;
-  border-radius: 16px;
-  background-color: #f4f4f4;
-  width: 100%;
-  padding: 16px 24px;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
-}
-
-.card__price {
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  color: #1c1c1c;
+  color: var(--color-black);
+  border: none;
+  border-radius: 16px;
+  background-color: var(--color-dark-white);
+  width: 100%;
+  padding: 16px 24px;
 }

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400..600&display=swap');
+
+@import url(./header.css);
+@import url(./cards.css);
+@import url(./main.css);
+@import url(./variables.css);
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1440px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-grey);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+h2 {
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  letter-spacing: 1.2px;
+}
+
+h4 {
+  font-size: 24px;
+  height: 32px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+h5 {
+  letter-spacing: 0.7px;
+}
+
+p {
+  letter-spacing: 1.1px;
+  word-spacing: -3.5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 16px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container--main {
+  flex-direction: column;
+  padding-bottom: 32px;
+  padding-top: 0;
+}
+
+.section {
+  width: 100%;
+  margin: 32px 0;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  gap: 32px;
+}
+
+.section__title {
+  font-size: 40px;
+  line-height: 50px; /* чтобы совпадало с макетом */
+  overflow: visible;
+  height: 48px;
+}
+
+.button--icon-leading {
+  padding: 14px 22px;
+  border-radius: 16px;
+  border: 2px solid #1c1c1c;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.grid {
+  display: grid;
+  gap: 32px;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
