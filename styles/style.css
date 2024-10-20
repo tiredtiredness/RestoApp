@@ -4,6 +4,7 @@
 @import url(./cards.css);
 @import url(./main.css);
 @import url(./variables.css);
+@import url('./footer.css');
 
 *,
 *:before,
@@ -46,7 +47,7 @@ h5 {
   letter-spacing: 0.7px;
 }
 
-p {
+.header p {
   letter-spacing: 1.1px;
   word-spacing: -3.5px;
 }
@@ -70,12 +71,22 @@ button {
   padding-top: 0;
 }
 
+.container--footer {
+  flex-direction: column;
+  padding: 32px 64px;
+  gap: 32px;
+}
+
 .section {
   width: 100%;
-  margin: 32px 0;
+  padding: 32px 0;
   display: flex;
   gap: 32px;
   flex-direction: column;
+}
+
+.section:last-child {
+  padding-bottom: 64px;
 }
 
 .cards {
@@ -107,4 +118,70 @@ button {
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+  border-radius: 16px;
+}
+
+.button {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--color-black);
+  border: none;
+  border-radius: 16px;
+  background-color: var(--color-dark-white);
+  width: 100%;
+  padding: 16px 24px;
+}
+
+.button:hover {
+  color: var(--color-dark-grey);
+  background-color: #e8e8e8;
+}
+
+.icon-button {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  border: 2px solid var(--color-black);
+  padding: 10px 14px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-button--medium {
+  padding: 12px 16px;
+  gap: 12px;
+}
+
+.icon-button--large {
+  padding: 14px 22px;
+  gap: 16px;
+}
+.icon-button:hover {
+  background-color: var(--color-black);
+  color: white;
+}
+.icon-button:hover svg path {
+  fill: white;
+}
+
+.icon-button--filled {
+  background-color: var(--color-black);
+}
+.icon-button--filled svg path {
+  fill: white;
+}
+.icon-button--filled:hover svg path {
+  fill: var(--color-black);
+}
+.icon-button--filled:hover {
+  background-color: white;
+  border: 2px solid transparent;
 }

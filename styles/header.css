@@ -54,6 +54,11 @@
   color: var(--color-grey);
 }
 
+.header a:hover {
+  color: var(--color-black);
+  transition: color 0.2s;
+}
+
 .right {
   display: flex;
   align-items: center;
@@ -84,26 +89,4 @@
 .buttons {
   display: flex;
   gap: 16px;
-}
-
-.button {
-  border-radius: 16px;
-  border: 2px solid var(--color-black);
-  padding: 10px 14px;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button--filled {
-  background-color: var(--color-black);
-}
-
-#basket-button svg path {
-  fill: #fff;
-}
-
-#user-button svg path {
-  fill: var(--color-black);
 }
