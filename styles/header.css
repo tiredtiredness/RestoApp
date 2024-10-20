@@ -63,6 +63,7 @@
 .contacts {
   word-spacing: 2px;
   text-align: right;
+  font-style: normal;
   color: var(--color-grey);
 }
 
